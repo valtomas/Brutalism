@@ -1,17 +1,15 @@
 body {
     margin:0;
     padding: 0; 
-    background-image: url(/images/background_1.jpg);
+    background-image: url(../../images/background_1.jpg);
     background-size: cover;                     
     background-repeat: no-repeat;
-    
 }
 
 a {
     color:inherit;
     text-decoration: none;
    }
-  
 
 .mainBody {
 margin-left: 29%;
