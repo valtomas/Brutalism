@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
- .container-header {
+ #container-header {
    padding: 10px 0;
    background-color: #c0bdb7;
    width: 100%;
@@ -87,7 +87,6 @@ a {
 }
 
 figure img {
-   /* flex: 1 1 auto; */
 width: 400px;
 }
 
@@ -111,12 +110,11 @@ width: 400px;
 .square:hover {
       filter:grayscale(60%);
       transition: 1s ease;
-
 }
 
 
 
-.container-footer {
+#container-footer {
    font-family: Oswald, sans-serif;
    font-size: 1.5ex;
    text-align:right;
@@ -170,6 +168,11 @@ width: 400px;
    text-indent: -1.5em;
 }
 
+#container-footer {
+   font-family: Oswald, sans-serif;
+   font-size: 1.2ex;
+   text-align:center;
 
+}
 
 }
