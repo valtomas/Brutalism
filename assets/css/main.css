@@ -16,16 +16,6 @@ a {
     text-decoration: none;
 }
 
-figure img {
-   position: abolut;
-   width: 100%; 
-   max-width: 400px; 
-   height: auto; 
-   margin: px; 
-   display:inline;
-   float: left;
-}
-
  .container-header {
    padding: 10px 0;
    background-color: #c0bdb7;
@@ -37,11 +27,13 @@ figure img {
 .containerMainBody {
    text-align: justify;
    text-justify: inter-word;
+   display: flex;
+   flex-direction: column;
    margin-left: 20%;
    margin-right: 20%;
-
+   
 }
- .subtitle{
+ #subtitle{
     margin-top: 6% ;
     margin-bottom: 10px;
     font-family: Oswald, sans-serif;    
@@ -58,7 +50,7 @@ figure img {
       filter: alpha(opacity=30);
     }
 
-.title {
+   #title {
     border-top-style: solid;
     border-bottom-style: solid;
     border-width: 2px;
@@ -78,6 +70,7 @@ figure img {
  .opinions {
    margin-top: 20px;
    margin-left: 50px;
+   margin-right: 50px;
    font-family: Oswald, sans-serif;
    list-style-type: circle;
    list-style-position: inside;
@@ -86,14 +79,41 @@ figure img {
 }
 
 .containerExamples{
-   margin-left: 23%;
-   margin-right: 20%;
-   align-content: center;
-   display: block; 
-   flex-flow: row wrap;
-   grid-auto-flow:row; 
-   overflow: auto;
+   display: flex; 
+   flex-wrap:wrap;
+   justify-content:center;
+   margin-left: 15%;
+   margin-right: 15%;
 }
+
+figure img {
+   /* flex: 1 1 auto; */
+width: 400px;
+}
+
+.overText{
+   font-family: Oswald, sans-serif;    
+    font-size: 3ex;
+    color: white;
+    opacity: 0;
+    text-align: center;
+    margin-bottom: -30px;
+    transform: translate(0, -150%);
+
+}
+
+.square:hover .overText{
+   opacity:1;
+   transition: 2s ease;
+}
+
+
+.square:hover {
+      filter:grayscale(60%);
+      transition: 1s ease;
+
+}
+
 
 
 .container-footer {
@@ -108,3 +128,11 @@ figure img {
    
 }
 
+ .square:hover .overlay{
+   opacity:1;
+   transition: 2s ease;
+   }
+
+@media(min-width:768px){
+
+}
